@@ -1,7 +1,7 @@
 require('dotenv').config();
 console.log("MONGODB_URI:", process.env.MONGODB_URI);
 const express = require('express');
-const port = 4000;
+const port = process.env.PORT || 3000;
 const path = require('path');
 
 // require the mongoose file
